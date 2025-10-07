@@ -741,6 +741,11 @@ button {
     max-height: 90px;
 }
 
+/* Assetworks AI - Dark background for white logo */
+.project-card:nth-child(1) .project-image {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
 /* Peers Club custom styling */
 .peers-club-bg {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
