@@ -718,6 +718,39 @@ button {
     color: var(--color-text);
 }
 
+.project-logo-img {
+    max-width: 200px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Special styling for MFine & Lifecell dual logos */
+.mfine-lifecell-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.mfine-logo,
+.lifecell-logo {
+    max-width: 120px;
+    max-height: 60px;
+}
+
+/* Peers Club custom styling */
+.peers-club-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.peers-club-bg .logo-text {
+    color: white;
+    font-size: 28px;
+}
+
 .project-info {
     display: flex;
     flex-direction: column;
