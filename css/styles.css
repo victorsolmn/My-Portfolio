@@ -26,11 +26,11 @@
 
     /* Spacing */
     --spacing-xs: 8px;
-    --spacing-sm: 16px;
-    --spacing-md: 24px;
-    --spacing-lg: 48px;
-    --spacing-xl: 72px;
-    --spacing-xxl: 120px;
+    --spacing-sm: 12px;
+    --spacing-md: 20px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    --spacing-xxl: 80px;
 
     /* Border Radius */
     --radius-sm: 4px;
@@ -256,8 +256,8 @@ button {
    =========================== */
 
 .hero-section {
-    padding-top: 120px;
-    padding-bottom: var(--spacing-xl);
+    padding-top: 100px;
+    padding-bottom: var(--spacing-lg);
     background-color: #F5F5F5;
 }
 
@@ -413,7 +413,7 @@ button {
 
 .coaching-cta-section {
     background-color: #3A3A3A;
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-xl) 0;
 }
 
 .coaching-wrapper {
@@ -537,7 +537,7 @@ button {
    =========================== */
 
 .about-me-section {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-xl) 0;
     background-color: #F9F9F9;
 }
 
@@ -667,7 +667,7 @@ button {
 }
 
 .projects-grid {
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
 }
 
 .project-card {
@@ -688,15 +688,16 @@ button {
 
 .project-image {
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
     background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%);
     border-radius: var(--radius-md);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     transition: var(--transition-base);
+    padding: var(--spacing-lg);
 }
 
 .side-project-image {
@@ -705,11 +706,12 @@ button {
 }
 
 .project-card:hover .project-image {
-    transform: scale(1.01);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .project-logo {
-    padding: var(--spacing-md);
+    padding: 0;
 }
 
 .logo-text {
@@ -719,42 +721,69 @@ button {
 }
 
 .project-logo-img {
-    max-width: 300px;
-    max-height: 120px;
+    max-width: 100%;
+    max-height: 100px;
     width: auto;
     height: auto;
     object-fit: contain;
 }
 
-/* Special styling for MFine & Lifecell dual logos */
-.mfine-lifecell-bg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-md);
-    flex-wrap: wrap;
+/* Company-specific backgrounds with brand colors */
+
+/* Assetworks AI - Dark blue/tech theme */
+.project-card:nth-child(1) .project-image {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    padding: var(--spacing-xl);
 }
 
-.mfine-logo,
-.lifecell-logo {
-    max-width: 180px;
-    max-height: 90px;
+.project-card:nth-child(1) .project-logo-img {
+    /* Logo is already white, no filter needed */
 }
 
-/* Peers Club custom styling */
+/* Peers Club - Purple gradient */
 .peers-club-bg {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    padding: var(--spacing-xl);
 }
 
 .peers-club-bg .logo-text {
     color: white;
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* MFine & Lifecell - Healthcare blue/green */
+.mfine-lifecell-bg {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    padding: var(--spacing-xl);
+}
+
+.mfine-logo,
+.lifecell-logo {
+    max-width: 140px;
+    max-height: 80px;
+    filter: brightness(0) invert(1);
+}
+
+/* Meesho - Red/pink brand color */
+.project-card:nth-child(4) .project-image {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    padding: var(--spacing-xl);
+}
+
+.project-card:nth-child(4) .project-logo-img {
+    filter: brightness(0) invert(1);
 }
 
 .project-info {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-xs);
+    gap: 6px;
 }
 
 .project-date {
