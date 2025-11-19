@@ -480,11 +480,62 @@ button {
     -webkit-text-fill-color: transparent;
 }
 
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.hero-cta-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    animation: fadeInUp 1s ease-out 0.5s both;
+    flex-wrap: wrap;
+}
+
+.cta-button-primary {
+    padding: 14px 32px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: var(--radius-sm);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cta-button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button-secondary {
+    padding: 14px 32px;
+    background-color: transparent;
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    border-radius: var(--radius-sm);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button-secondary:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
 .social-icons-hero {
     display: flex;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-md);
-    animation: fadeInUp 1s ease-out 0.4s both;
+    animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 .social-icon-simple {
@@ -628,6 +679,55 @@ button {
 .experience-role {
     font-size: 14px;
     color: var(--color-text-light);
+}
+
+/* ===========================
+   IMPACT STATS SECTION
+   =========================== */
+
+.impact-stats-section {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+}
+
+@media (max-width: 968px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.stat-item {
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.stat-number {
+    font-size: clamp(36px, 5vw, 48px);
+    font-weight: 700;
+    color: var(--color-black);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* ===========================
@@ -1193,6 +1293,11 @@ button {
     object-fit: cover;
 }
 
+/* Broadway images - use contain to show full image */
+.side-projects-section .case-study-img {
+    object-fit: cover;
+}
+
 .case-studies-section .project-link {
     padding: 0;
     display: flex;
@@ -1357,4 +1462,103 @@ button {
 
 section {
     scroll-margin-top: 100px;
+}
+
+/* ===========================
+   MOBILE-FIRST ENHANCEMENTS
+   =========================== */
+
+/* Small mobile devices (320px - 480px) */
+@media (max-width: 480px) {
+    :root {
+        --container-padding: 4vw;
+        --spacing-lg: 32px;
+        --spacing-xl: 48px;
+        --spacing-xxl: 80px;
+    }
+
+    .nav-container {
+        height: 70px;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        padding-top: 100px;
+        padding-bottom: var(--spacing-lg);
+    }
+
+    .hero-emoji {
+        font-size: 48px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .about-me-heading {
+        font-size: 32px;
+    }
+
+    .section-heading {
+        font-size: 24px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .coaching-title {
+        font-size: 28px;
+    }
+
+    .coaching-description {
+        font-size: 16px;
+    }
+
+    .social-icons-hero {
+        gap: var(--spacing-sm);
+    }
+
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-arrow {
+        display: none;
+    }
+}
+
+/* Medium mobile to tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    :root {
+        --container-padding: 3vw;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .section-heading {
+        font-size: 28px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .nav-link,
+    .social-icon,
+    .view-projects-btn,
+    .coaching-button {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-card {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
 }
