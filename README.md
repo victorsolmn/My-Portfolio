@@ -241,7 +241,7 @@ Adjust grid columns in `css/styles.css`:
 
 - **Email**: victorsolmn@gmail.com
 - **Phone**: +91 9901575048
-- **LinkedIn**: [Victor Salomon](https://www.linkedin.com/in/victor-salomon)
+- **LinkedIn**: [Victor Salomon](https://www.linkedin.com/in/victorsolmn/)
 - **GitHub**: [victorsolmn](https://github.com/victorsolmn)
 
 ## 📝 Key Design Principles
