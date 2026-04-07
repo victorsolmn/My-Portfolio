@@ -1298,6 +1298,32 @@ button {
     object-fit: cover;
 }
 
+/* Hey Donna card */
+.hey-donna-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    cursor: default;
+}
+
+.hey-donna-img {
+    object-fit: contain;
+    background-color: #f8f8f8;
+}
+
+.wip-btn {
+    background-color: #f59e0b;
+    color: #1a1a1a;
+    border: none;
+    cursor: default;
+    font-weight: 600;
+}
+
+.wip-btn:hover {
+    background-color: #f59e0b;
+    transform: none;
+}
+
 .case-studies-section .project-link {
     padding: 0;
     display: flex;
