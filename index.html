@@ -23,9 +23,8 @@
     <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0E1014" media="(prefers-color-scheme: dark)">
     <script>(function(){var d=document.documentElement;d.className=d.className.replace('no-js','js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);}catch(e){}})();</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -103,8 +102,9 @@
                     </div>
                     <figure class="portrait">
                         <picture>
-                            <source type="image/webp" srcset="/assets/images/opt/portrait-480.webp 480w, /assets/images/opt/portrait-800.webp 800w" sizes="(min-width: 1024px) 400px, (min-width: 768px) 34vw, 92vw">
-                            <img src="/assets/images/opt/portrait-800.jpg" srcset="/assets/images/opt/portrait-480.jpg 480w, /assets/images/opt/portrait-800.jpg 800w" sizes="(min-width: 1024px) 400px, (min-width: 768px) 34vw, 92vw" width="800" height="1000" alt="Portrait of Victor Salomon" fetchpriority="high">
+                            <source type="image/avif" srcset="/assets/images/opt/portrait-480.avif 480w, /assets/images/opt/portrait-640.avif 640w, /assets/images/opt/portrait-800.avif 800w" sizes="(min-width: 1024px) 420px, (min-width: 768px) 38vw, calc(100vw - 46px)">
+                            <source type="image/webp" srcset="/assets/images/opt/portrait-480.webp 480w, /assets/images/opt/portrait-640.webp 640w, /assets/images/opt/portrait-800.webp 800w" sizes="(min-width: 1024px) 420px, (min-width: 768px) 38vw, calc(100vw - 46px)">
+                            <img src="/assets/images/opt/portrait-640.jpg" srcset="/assets/images/opt/portrait-480.jpg 480w, /assets/images/opt/portrait-640.jpg 640w, /assets/images/opt/portrait-800.jpg 800w" sizes="(min-width: 1024px) 420px, (min-width: 768px) 38vw, calc(100vw - 46px)" width="800" height="1000" alt="Portrait of Victor Salomon" fetchpriority="high" decoding="async">
                         </picture>
                         <figcaption class="portrait-tag"><span class="dot" aria-hidden="true"></span>7+ years · 5 companies</figcaption>
                     </figure>
@@ -417,7 +417,7 @@
                             <p>Agentic AI gatekeeper that triages notifications by your real-time cognitive energy, keeping attention on high-priority goals.</p>
                             <ul class="chip-list"><li class="chip chip-neutral">n8n</li><li class="chip chip-neutral">Claude</li><li class="chip chip-neutral">Agents</li></ul>
                             <div class="project-links">
-                                <a href="https://github.com/victorsolmn" target="_blank" rel="noopener" data-track="project_demo_click" data-track-project="hey-donna">GitHub ↗</a>
+                                <a href="https://github.com/victorsolmn" target="_blank" rel="noopener" data-track="project_demo_click" data-track-project="hey-donna">GitHub profile ↗</a>
                             </div>
                         </div>
                     </article>
