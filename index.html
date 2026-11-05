@@ -101,12 +101,13 @@
                             <a class="btn btn-ghost" href="mailto:victorsolmn@gmail.com" data-track="email_click" data-track-location="hero">Email me <span class="arrow" aria-hidden="true">→</span></a>
                         </div>
                     </div>
-                    <div class="headshot">
+                    <figure class="portrait">
                         <picture>
-                            <source srcset="/assets/images/opt/headshot.webp" type="image/webp">
-                            <img src="/assets/images/opt/headshot.jpg" width="480" height="480" alt="Victor Salomon" fetchpriority="high">
+                            <source type="image/webp" srcset="/assets/images/opt/portrait-480.webp 480w, /assets/images/opt/portrait-800.webp 800w" sizes="(min-width: 1024px) 400px, (min-width: 768px) 34vw, 92vw">
+                            <img src="/assets/images/opt/portrait-800.jpg" srcset="/assets/images/opt/portrait-480.jpg 480w, /assets/images/opt/portrait-800.jpg 800w" sizes="(min-width: 1024px) 400px, (min-width: 768px) 34vw, 92vw" width="800" height="1000" alt="Portrait of Victor Salomon">
                         </picture>
-                    </div>
+                        <figcaption class="portrait-tag"><span class="dot" aria-hidden="true"></span>7+ years · 5 companies</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
