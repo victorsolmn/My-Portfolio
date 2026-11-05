@@ -212,13 +212,28 @@
         el.textContent = year;
     });
 
-    // ---------- Analytics events ----------
+    // ---------- Analytics (GA4) ----------
+    // Paste the GA4 measurement ID here to turn analytics on. While it's
+    // empty, no Google script loads and events are dropped.
+    const GA_ID = '';
+
+    if (GA_ID && location.hostname === 'victorsalomon.in') {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+            window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+        window.gtag('config', GA_ID);
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        document.head.appendChild(s);
+    }
+
     // Elements declare data-track="event_name" (+ optional data-track-*
-    // props). Sent to the analytics provider once one is configured.
+    // props), e.g. resume_download with location=hero.
     window.vsTrack = function (name, props) {
-        if (window.umami && typeof window.umami.track === 'function') {
-            window.umami.track(name, props);
-        }
+        if (typeof window.gtag === 'function') window.gtag('event', name, props);
     };
 
     document.addEventListener('click', (e) => {
