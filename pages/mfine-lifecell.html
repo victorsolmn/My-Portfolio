@@ -1,261 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MFine & Lifecell - Victor Salomon</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MFine &amp; LifeCell case study: halving turnaround time — Victor Salomon</title>
+    <meta name="description" content="How Victor Salomon cut turnaround time from 48 hours to under 24 by replacing spreadsheet workflows with a field app and an operations module.">
+    <link rel="canonical" href="https://victorsalomon.in/pages/mfine-lifecell">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Victor Salomon">
+    <meta property="og:title" content="MFine &amp; LifeCell case study: halving turnaround time — Victor Salomon">
+    <meta property="og:description" content="How Victor Salomon cut turnaround time from 48 hours to under 24 by replacing spreadsheet workflows with a field app and an operations module.">
+    <meta property="og:url" content="https://victorsalomon.in/pages/mfine-lifecell">
+    <meta property="og:image" content="https://victorsalomon.in/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Victor Salomon — Chief of Staff, Product &amp; Growth">
+    <meta name="twitter:card" content="summary_large_image">
+    <script>(function(){var d=document.documentElement;d.className=d.className.replace('no-js','js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);}catch(e){}})();</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navigation">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">VS</a>
-            <div class="nav-menu-wrapper">
-                <ul class="nav-menu">
-                    <li><a href="../index.html#work" class="nav-link">Work</a></li>
-                    <li><a href="../index.html#side-projects" class="nav-link">Side Projects</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- header:start -->
+    <header class="site-header">
+        <nav class="container nav" aria-label="Main">
+            <a class="wordmark" href="/"><span class="monogram" aria-hidden="true">VS</span><span class="wordmark-name">Victor Salomon</span></a>
+
+            <div class="nav-mobile-bar">
+                <a class="btn btn-primary btn-sm nav-resume-mobile" href="/assets/Victor_Salomon_Resume.pdf" download target="_blank" rel="noopener" data-track="resume_download" data-track-location="nav-mobile">Resume</a>
+                <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" aria-label="Open menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
+
+            <div class="nav-sheet" id="nav-sheet">
+                <div class="nav-sheet-head">
+                    <a class="wordmark" href="/" tabindex="-1"><span class="monogram" aria-hidden="true">VS</span><span class="wordmark-name">Victor Salomon</span></a>
+                    <button class="icon-btn nav-close" type="button" aria-label="Close menu">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+                    </button>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="/#work">Work</a></li>
+                    <li><a href="/#projects">Projects</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#contact">Contact</a></li>
                 </ul>
-                <div class="social-icons-header">
-                    <a href="https://www.linkedin.com/in/victorsolmn/" target="_blank" class="social-icon" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
+
+                <div class="nav-actions">
+                    <a class="icon-btn" href="https://www.linkedin.com/in/victorsolmn/" target="_blank" rel="noopener" aria-label="LinkedIn" data-track="linkedin_click" data-track-location="nav">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
                     </a>
-                    <a href="https://github.com/victorsolmn" target="_blank" class="social-icon" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
+                    <a class="icon-btn" href="https://github.com/victorsolmn" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .3"/></svg>
                     </a>
-                    <a href="mailto:victorsolmn@gmail.com" class="social-icon" aria-label="Email">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
+                    <a class="icon-btn" href="mailto:victorsolmn@gmail.com" aria-label="Email" data-track="email_click" data-track-location="nav">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                    </a>
+                    <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+                    </button>
+                    <a class="btn btn-primary btn-sm" href="/assets/Victor_Salomon_Resume.pdf" download target="_blank" rel="noopener" data-track="resume_download" data-track-location="nav">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>
+                        Download resume
                     </a>
                 </div>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+        </nav>
+    </header>
+    <!-- header:end -->
 
-    <!-- Project Hero -->
-    <section class="project-hero">
-        <div class="project-hero-background">
-            <div class="project-hero-logo">
-                <span class="hero-logo-text">MFine & Lifecell</span>
-            </div>
-        </div>
-        <div class="container">
-            <div class="project-hero-content">
-                <h1 class="project-hero-title">MFine & Lifecell</h1>
-                <p class="project-hero-subtitle">Digital Health & Operations Transformation</p>
-                <div class="project-meta">
-                    <div class="meta-item">
-                        <span class="meta-label">Timeline</span>
-                        <span class="meta-value">Feb 2021 — Dec 2023</span>
+    <main id="main">
+        <header class="cs-hero">
+            <div class="container">
+                <a class="cs-back" href="/#work">← All work</a>
+                <div class="cs-hero-head">
+                    <div class="cs-company">
+                        <span class="logo-tile"><img src="/assets/images/mfine-logo.png" alt="" width="40" height="40"></span>
+                        <strong>MFine &amp; LifeCell</strong>
                     </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Role</span>
-                        <span class="meta-value">Product Manager</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Team</span>
-                        <span class="meta-value">Cross-functional teams</span>
-                    </div>
+                    <h1>Halving turnaround time</h1>
+                    <p class="cs-lede">Rebuilding a doorstep service journey end to end — from the customer's booking to the field team's day — to get results back in under a day.</p>
+                    <dl class="cs-facts">
+                        <div><dt>Role</dt><dd>Product Manager</dd></div>
+                        <div><dt>Dates</dt><dd>Feb 2021 – Dec 2023</dd></div>
+                        <div><dt>Scope</dt><dd>Booking to report delivery</dd></div>
+                    </dl>
+                </div>
+                <div class="results results-3">
+                    <div class="result"><div class="result-value">48h <span class="to">→</span> &lt;24h</div><div class="result-label">Sample-to-report turnaround</div></div>
+                    <div class="result"><div class="result-value">2 tools</div><div class="result-label">Field app and operations web module, replacing spreadsheets</div></div>
+                    <div class="result"><div class="result-value">Pan-India</div><div class="result-label">Geo-fenced slot mapping across Tier-1 cities and pan-India</div></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Project Content -->
-    <div class="project-content">
-        <div class="container">
-            <div class="grid">
-                <div class="content-main">
+        <div class="container cs-body">
+            <section class="cs-section" aria-labelledby="context">
+                <h2 id="context">Context</h2>
+                <p>MFine offered doorstep diagnostics: a customer books a test, a paramedic collects the sample at home, and the report is delivered digitally. MFine and LifeCell came together through an acquisition. I owned the digital journey across booking, sample collection, tracking and report delivery.</p>
+            </section>
 
-                    <!-- Overview -->
-                    <section class="content-section">
-                        <h2 class="content-heading">Overview</h2>
-                        <p class="content-text">
-                            As Product Manager at MFine and Lifecell during their merger, I led multiple strategic initiatives spanning
-                            internal operations, B2B2C digital transformation, and growth programs. My work focused on digitizing manual
-                            processes, building scalable systems, and developing tools for sales, paramedics, and management teams
-                            across the healthcare ecosystem.
-                        </p>
-                    </section>
+            <section class="cs-section" aria-labelledby="problem">
+                <h2 id="problem">The problem</h2>
+                <p>Field operations ran on spreadsheets, and it took <strong>48 hours</strong> from sample collection to report.</p>
+            </section>
 
-                    <!-- Challenge -->
-                    <section class="content-section">
-                        <h2 class="content-heading">The Challenge</h2>
-                        <p class="content-text">
-                            During the MFine-LifeCell merger, the organization faced significant operational inefficiencies with manual
-                            processes, fragmented systems, and low adoption of digital tools. The challenge was to streamline operations,
-                            build scalable B2B2C solutions, and create internal applications that would serve diverse stakeholders while
-                            driving growth through strategic initiatives like referral programs and pricing optimization.
-                        </p>
-                    </section>
+            <section class="cs-section" aria-labelledby="did">
+                <h2 id="did">What I did</h2>
+                <ul class="cs-list">
+                    <li>Ran field research, <strong>shadowing paramedics</strong> on their rounds to find operational friction.</li>
+                    <li>Replaced spreadsheet workflows with a <strong>Paramedic App</strong> and an <strong>operations web module</strong>.</li>
+                    <li>Architected a <strong>geo-fenced slot-mapping system</strong> that scaled service delivery across Tier-1 cities and pan-India.</li>
+                    <li>Shipped all of it within healthcare compliance constraints.</li>
+                </ul>
+            </section>
 
-                    <!-- Approach -->
-                    <section class="content-section">
-                        <h2 class="content-heading">My Approach</h2>
-                        <div class="approach-list">
-                            <div class="approach-item">
-                                <h3 class="approach-title">Merger Transition & Tool Optimization</h3>
-                                <p class="content-text">
-                                    Led transition efforts during the MFine-LifeCell merger, focusing on consolidating systems and
-                                    improving internal tool efficiency. Successfully improved operational efficiency by 30% through
-                                    process optimization and tool enhancement.
-                                </p>
-                            </div>
+            <section class="cs-section" aria-labelledby="results">
+                <h2 id="results">Results</h2>
+                <figure class="cs-visual compare">
+                    <div class="compare-row"><span class="compare-label">Before</span><span class="compare-track"><span class="compare-bar" style="--w:100%"></span></span><span class="compare-value">48h</span></div>
+                    <div class="compare-row"><span class="compare-label">After</span><span class="compare-track"><span class="compare-bar is-after" style="--w:48%"></span></span><span class="compare-value">&lt;24h</span></div>
+                    <figcaption>Sample-to-report turnaround time, before and after.</figcaption>
+                </figure>
+                <ul class="cs-list">
+                    <li>Turnaround cut from <strong>48 hours to under 24</strong>.</li>
+                    <li>Field and operations teams moved off spreadsheets onto purpose-built tools.</li>
+                    <li>Slot mapping that scaled service delivery across Tier-1 cities and pan-India.</li>
+                </ul>
+            </section>
 
-                            <div class="approach-item">
-                                <h3 class="approach-title">B2B2C Digital Ordering System</h3>
-                                <p class="content-text">
-                                    Developed a comprehensive B2B2C digital ordering and invoicing system that streamlined the entire
-                                    order-to-payment flow. This initiative increased adoption by 40% by reducing friction and improving
-                                    user experience for business partners.
-                                </p>
-                            </div>
+            <section class="cs-section" aria-labelledby="learned">
+                <h2 id="learned">What I learned</h2>
+                <ul class="cs-list">
+                    <li>The fastest way to understand an operations problem is to go out with the people doing the work.</li>
+                    <li>Tools for the internal team can move a customer metric as much as the customer-facing app.</li>
+                </ul>
+            </section>
 
-                            <div class="approach-item">
-                                <h3 class="approach-title">Operations Digitization & Automation</h3>
-                                <p class="content-text">
-                                    Digitized product operations and built API-driven automation systems, reducing manual work by 75%.
-                                    This transformation enabled teams to focus on high-value activities while ensuring accuracy and
-                                    consistency in operations.
-                                </p>
-                            </div>
+            <nav class="cs-pager" aria-label="More case studies">
+                <a class="prev" href="/pages/peersclub"><small>← Previous</small><span>Peersclub</span></a>
+                <a class="next" href="/pages/meesho"><small>Next →</small><span>Meesho</span></a>
+            </nav>
 
-                            <div class="approach-item">
-                                <h3 class="approach-title">Internal Application Development</h3>
-                                <p class="content-text">
-                                    Led development of multiple internal applications tailored for sales teams, paramedics, and management.
-                                    These tools provided role-specific functionality that improved productivity and decision-making across
-                                    the organization.
-                                </p>
-                            </div>
-
-                            <div class="approach-item">
-                                <h3 class="approach-title">Growth Initiatives & Optimization</h3>
-                                <p class="content-text">
-                                    Designed and implemented growth initiatives including referral programs, cashback systems, and
-                                    optimized pricing models. These programs drove user acquisition and retention while improving
-                                    unit economics.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Results -->
-                    <section class="content-section">
-                        <h2 class="content-heading">Results & Impact</h2>
-                        <div class="results-grid">
-                            <div class="result-card">
-                                <div class="result-number">30%</div>
-                                <div class="result-label">Improvement in internal tool efficiency</div>
-                            </div>
-                            <div class="result-card">
-                                <div class="result-number">40%</div>
-                                <div class="result-label">Increase in B2B2C system adoption</div>
-                            </div>
-                            <div class="result-card">
-                                <div class="result-number">75%</div>
-                                <div class="result-label">Reduction in manual operations work</div>
-                            </div>
-                            <div class="result-card">
-                                <div class="result-number">Multiple Apps</div>
-                                <div class="result-label">Built for sales, paramedics & management</div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Key Features -->
-                    <section class="content-section">
-                        <h2 class="content-heading">Key Deliverables</h2>
-                        <ul class="feature-list">
-                            <li>Merger transition and internal tool optimization</li>
-                            <li>B2B2C digital ordering and invoicing platform</li>
-                            <li>API-driven automation for product operations</li>
-                            <li>Internal applications for sales, paramedics, and management</li>
-                            <li>Referral program system with tracking and rewards</li>
-                            <li>Cashback program implementation</li>
-                            <li>Dynamic pricing models and optimization</li>
-                        </ul>
-                    </section>
-
-                    <!-- Technologies -->
-                    <section class="content-section">
-                        <h2 class="content-heading">Technologies & Tools</h2>
-                        <div class="tech-tags">
-                            <span class="tech-tag">API Integration</span>
-                            <span class="tech-tag">Process Automation</span>
-                            <span class="tech-tag">B2B2C Platforms</span>
-                            <span class="tech-tag">Internal Tools</span>
-                            <span class="tech-tag">Analytics</span>
-                            <span class="tech-tag">Growth Systems</span>
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">Jira</span>
-                        </div>
-                    </section>
-
+            <aside class="cs-cta" aria-label="Get in touch">
+                <p>Working on something similar? Let's talk.</p>
+                <div class="hero-ctas">
+                    <a class="btn btn-primary" href="mailto:victorsolmn@gmail.com" data-track="email_click" data-track-location="case-mfine">Email me</a>
+                    <a class="btn btn-secondary" href="/assets/Victor_Salomon_Resume.pdf" download target="_blank" rel="noopener" data-track="resume_download" data-track-location="case-mfine">Download resume</a>
                 </div>
-            </div>
+            </aside>
         </div>
-    </div>
+    </main>
 
-    <!-- Project Navigation -->
-    <section class="project-nav">
-        <div class="container">
-            <div class="project-nav-content">
-                <a href="meesho.html" class="project-nav-link">
-                    <span class="nav-label">Next Project</span>
-                    <span class="nav-title">Meesho →</span>
+    <!-- footer:start -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span data-year>2026</span> Victor Salomon · Bengaluru</p>
+            <p>Built with ♥ and a lot of Claude Code</p>
+            <div class="footer-links">
+                <a class="icon-btn" href="https://www.linkedin.com/in/victorsolmn/" target="_blank" rel="noopener" aria-label="LinkedIn" data-track="linkedin_click" data-track-location="footer">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Victor Salomon</p>
-                <div class="social-icons-footer">
-                    <a href="https://www.linkedin.com/in/victorsolmn/" target="_blank" class="social-icon" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/victorsolmn" target="_blank" class="social-icon" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                    </a>
-                    <a href="mailto:victorsolmn@gmail.com" class="social-icon" aria-label="Email">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </a>
-                </div>
+                <a class="icon-btn" href="https://github.com/victorsolmn" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .3"/></svg>
+                </a>
+                <a class="icon-btn" href="mailto:victorsolmn@gmail.com" aria-label="Email" data-track="email_click" data-track-location="footer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                </a>
+                <a class="btn btn-ghost btn-sm" href="/assets/Victor_Salomon_Resume.pdf" download target="_blank" rel="noopener" data-track="resume_download" data-track-location="footer">Resume <span class="arrow" aria-hidden="true">↓</span></a>
             </div>
         </div>
     </footer>
+    <!-- footer:end -->
 
-    <script src="../js/script.js"></script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>
