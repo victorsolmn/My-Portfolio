@@ -147,6 +147,65 @@
         }
     }
 
+    // ---------- Results count-up (once, on first view) ----------
+    const counters = document.querySelectorAll('[data-count]');
+    if (counters.length && !reduceMotion.matches && 'IntersectionObserver' in window) {
+        const run = (el) => {
+            const target = Number(el.dataset.count);
+            const start = performance.now();
+            const duration = 1200;
+            const step = (now) => {
+                const t = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - t, 3);
+                el.textContent = String(Math.round(target * eased));
+                if (t < 1) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+        };
+        const io = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    run(entry.target);
+                    observer.unobserve(entry.target);
+                });
+            },
+            { threshold: 0.6 }
+        );
+        counters.forEach((el) => io.observe(el));
+    }
+
+    // ---------- "Where I work" intersection visual ----------
+    const nodes = document.querySelectorAll('.where-node');
+    const source = document.querySelectorAll('[data-where-source] li');
+    if (nodes.length && source.length) {
+        const title = document.querySelector('[data-where-title]');
+        const what = document.querySelector('[data-where-what]');
+        const proof = document.querySelector('[data-where-proof]');
+        const spokes = document.querySelectorAll('.where-spoke');
+        let current = 0;
+
+        const select = (i) => {
+            if (i === current) return;
+            current = i;
+            const item = source[i].dataset;
+            title.textContent = item.title;
+            what.textContent = item.what;
+            proof.textContent = item.proof;
+            nodes.forEach((n, j) => n.setAttribute('aria-pressed', String(j === i)));
+            spokes.forEach((s, j) => s.classList.toggle('is-active', j === i));
+        };
+
+        const canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+        nodes.forEach((node, i) => {
+            node.addEventListener('click', () => select(i));
+            node.addEventListener('focus', () => select(i));
+            node.addEventListener('mouseenter', () => {
+                if (canHover.matches) select(i);
+            });
+        });
+    }
+
     // ---------- Footer year ----------
     const year = String(new Date().getFullYear());
     document.querySelectorAll('[data-year]').forEach((el) => {
