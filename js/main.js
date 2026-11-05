@@ -157,7 +157,7 @@
             const step = (now) => {
                 const t = Math.min((now - start) / duration, 1);
                 const eased = 1 - Math.pow(1 - t, 3);
-                el.textContent = String(Math.round(target * eased));
+                el.textContent = Math.round(target * eased).toLocaleString('en-US');
                 if (t < 1) requestAnimationFrame(step);
             };
             requestAnimationFrame(step);
