@@ -1,6 +1,5 @@
 # Unknown URLs fall through to /404.html (served automatically by Netlify).
 # Repo-only folders are not part of the site.
 /_partials/*   /404.html   404!
-/_dev/*        /404.html   404!
 /scripts/*     /404.html   404!
 /README.md     /404.html   404!
